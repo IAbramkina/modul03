@@ -1,4 +1,4 @@
-from random import randint, sample
+from random import sample
 
 def get_numbers_ticket(min, max, quantity):
 
@@ -7,8 +7,6 @@ def get_numbers_ticket(min, max, quantity):
     if max>1000:
         return []
     if min >=max:
-        return []
-    if min > quantity or quantity>max:
         return []
 
     return sorted(sample(range(min, max), quantity))
